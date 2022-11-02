@@ -28,8 +28,19 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  background: #aad4cf;
+}
 body {
 	line-height: 1;
+  display: flex;
+  flex-direction: column;
+  width: 1024px;
+  background: #cfede9;
 }
 ol, ul {
 	list-style: none;
@@ -47,24 +58,84 @@ table {
 	border-spacing: 0;
 }
 
-Coding for nav list
+/* Coding for nav list */
 nav ul {
     list-style: none;
-    margin: 0; padding: 0;
+    margin: 0px;
+     padding: 0;
+     width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+  .article ul{
+    margin: 0px 20px;
+  }
+  h1{
+    font-size: 32px;
+    padding: 16px 0px;
+  }
+  h2{
+    font-size: 24px;
+    padding: 12px 0px;
+  }
+  h3{
+    font-size: 20px;
+    padding: 16px 0px;
   }
   
   nav li {
     display: inline;
+    margin: 0; padding: 0;
   }
   
   nav a {
     display: inline-block;
     border-right: 1px solid black;
-    padding: 10px 20px;
+    padding: 10px 122px;
   }
   
   nav li:last-child a {
     border-right: none;
   }
   
-  
+  .header{
+    background: url(../images/lone-starfish-wide.jpg);
+    height: 342px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+  }
+.article {
+  margin: 6px;
+}
+.contact {
+  padding: 12px;
+  border: 1px black solid;
+}
+
+#yname,#yemail,#ymessage {
+  width: 100%;
+}
+.action{
+  display:flex;
+  padding: 10px 0px;
+}
+.submit{
+  background: transparent;
+    border: 1px black solid;
+}
+.article > img {
+  float: left;
+    margin-right: 10px;
+    margin-bottom: 4px;
+}
+
+.footer{
+  float: right;
+}
